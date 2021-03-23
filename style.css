@@ -1,0 +1,362 @@
+
+*{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/*************
+header
+*************/
+header #banner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: auto;
+}
+
+header #slogan {
+    color: #180085;
+    font-size: smaller;
+    font-style: italic;
+}
+
+#menu {
+    background-color: black;
+}
+
+#menu ul{
+    max-width: 1024px;
+    margin: auto;
+    /*格式設定*/
+    background-color:black;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+
+    line-height: 2em;
+
+    /*排版*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu ul>li {
+    /*排版*/
+    flex: 1 1 auto;
+}
+#menu ul>li>a {
+    text-decoration: none;
+    background-color: black;
+    color: lightblue;
+
+    border-bottom: solid thick black;
+    padding: 20px 0;
+    transition: ease all .5s;
+
+    /*排版*/
+    display: block;
+}
+#menu ul>li>a:hover {
+    /*background-color: gray;*/
+
+    border-bottom: solid thick lightblue;
+    padding: 2px 0;
+}
+#menu ul>li>a:active{
+    background-color:cornsilk;
+    color: lightseagreen;
+}
+
+
+/*************
+content 1
+*************/
+.bigpic {
+    position: relative;
+    height: 120vh;
+    
+}
+.bigpic .bg{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/NZ.jpg);
+    background-size: cover;
+}
+.bigpic > p {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    font-size: 2.5em;
+    color: white;
+    width: 33%;
+    text-shadow: 2px 5px slategrey;
+}
+.bigpic .bg2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/souv.jpg);
+    background-size: cover;
+}
+
+
+
+
+.bigpic .centerblock {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 0;
+
+    width: 75%;
+    height: 75%;
+    background-color: white;
+    opacity: .9;
+    padding: 1em 50px;
+    border-radius: 15px;
+}
+
+.bigpic .centerblock a:active {
+    background-color:cornsilk;
+    color: lightgray;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+
+a{
+    color: #3770B7;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.picbox {
+    width: 18%;
+    border: solid thin gray;
+    text-align: center;
+    padding: 0px 0px 15px 0px;
+    margin-bottom: 10px;
+    overflow: hidden;  
+}
+
+#pt {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.picbox img {
+    max-width: 100%; 
+    transition: all ease .5s;
+    animation-name: fadeInDown 1s 1s;
+}
+
+.picbox img:hover {
+    /*filter: blur(5px)*/
+    transform: scale(1.1);
+    filter: opacity(.7);
+}
+
+.picbox .myb {
+    text-decoration: none;
+    background-color: rgb(68, 74, 99);
+    color: rgb(159, 243, 243);
+    border: solid thin rgb(159, 243, 243);
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+
+/*************
+content 2
+*************/
+.content {
+    max-width: 850px;
+    margin: auto;
+    text-align: justify;
+}
+.content img {
+    max-width: 850px;
+    margin: auto;
+    text-align: justify;
+    border-radius: 10px;
+}
+.content .info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.content .info .infocard {
+    width: 32%;
+    font-size: 0.8em;
+}
+.content .info .infocard img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.content .info .infocard h3 {
+    color: rgb(151, 1, 39);
+}
+
+
+.content .info .infocard h4 {
+    color: rgb(151, 1, 39);
+    padding-bottom: 0.8em;
+    border-bottom: 3px solid #888888;
+    text-transform: uppercase;
+}
+
+
+.content .info .infocard .infotxt {
+    padding-bottom:10px;
+    border-bottom: solid thin gray;
+}
+
+.content .info .infocard b {
+    color: #5F2D8C;
+}
+
+ .greenblock {
+    box-sizing: border-box;
+
+    max-width: 960px;
+    margin: 16px auto;
+    background-color: #250414;
+    padding: 30px 280px 30px 50px;
+
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 50px;
+
+    background-image: url(images/barrel.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: 120% center;
+}
+
+/*************
+restaurant
+*************/
+.twopic {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    min-height: 750px;
+    max-height: 1350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.twopic .picx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.twopic .picx .bg3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/FERGBURGER.jpg);
+    background-size: cover;
+}
+.twopic .picx .bg4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/vector-grunge-background.jpg);
+    background-size: cover;
+}
+
+.twopic .picx .bg5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/The\ Larder.jpg);
+    background-size: cover;
+}
+
+.twopic .picx .bg6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/palate.jpg);
+    background-size: cover;
+}
+
+.twopic .picx iframe {
+    margin-top: 50px;
+}
+
+.twopic .picx .bottomblock {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    opacity: .75;
+    padding: 1px 20px;
+}
+
+
+/*************
+footer
+*************/
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer p{
+    max-width: 665px;
+    margin: auto;
+    padding-bottom: 50px;
+    font-size: small;
+}
+footer .social{
+    max-width: 800px;
+    margin:  auto ;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: x-large;
+    word-spacing: 2em;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(224, 237, 255);
+}
+h2 {
+    color: rgb(151, 1, 39);
+    margin: 10px 0;
+}
+
+ul {
+    padding: 0;
+    max-width: 1024px;
+    margin: 10px 20px;
+    list-style-type: square;
+}
+
+
+
+
+
+
+
+
+
+
